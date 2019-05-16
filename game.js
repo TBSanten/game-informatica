@@ -30,8 +30,11 @@ var bounceBall = function() {
         ballXspeed = ballXspeed * -1;
     }
     
-    if ((ballYpos + ballRatio >= canvasHeight) || (ballYpos -ballRatio <= 0)) {
+    if (ballYpos -ballRatio <= 0) {
         ballYspeed = ballYspeed * -1;
+    }
+    if (ballYpos - ballRatio >= 400){
+        bounceBall = reset
     }
 };
 
