@@ -34,7 +34,7 @@ var bounceBall = function() {
         ballYspeed = ballYspeed * -1;
     }
     if (ballYpos - ballRatio >= 400){
-        bounceBall = reset
+        reset
     }
 };
 
